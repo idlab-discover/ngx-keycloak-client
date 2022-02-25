@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'ngx-keycloak-client'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-app';
+
+  constructor(private auth: AuthService) {
+    console.log(auth.sayHello());
+  }
 }

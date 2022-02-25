@@ -15,7 +15,11 @@ export class AuthService {
 
   }
 
-  
+  sayHello(): string {
+    return 'Hello there!'
+  }
+
+
 
 
 }
