@@ -1,4 +1,5 @@
 import { APP_INITIALIZER, ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { NgxKeycloakClientComponent } from './ngx-keycloak-client.component';
 import { initKeycloak } from './utils';
 
@@ -9,6 +10,7 @@ import { initKeycloak } from './utils';
     NgxKeycloakClientComponent
   ],
   imports: [
+    KeycloakAngularModule
   ],
   exports: [
     NgxKeycloakClientComponent
@@ -16,8 +18,9 @@ import { initKeycloak } from './utils';
   providers: [
     {
       provide: APP_INITIALIZER,
-      useFactory: () => initKeycloak,
-      multi: true
+      useFactory: initKeycloak,
+      multi: true,
+      deps: [KeycloakService]
     }
   ]
 })
@@ -36,8 +39,9 @@ export class NgxKeycloakClientModule {
       providers: [
         {
           provide: APP_INITIALIZER,
-          useFactory: () => initKeycloak,
-          multi: true
+          useFactory: initKeycloak,
+          multi: true,
+          deps: [KeycloakService]
         }
       ]
     }
