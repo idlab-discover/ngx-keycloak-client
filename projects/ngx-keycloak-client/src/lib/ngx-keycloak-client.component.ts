@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-ngx-keycloak-client',
-  template: `
-    <p>
-      ngx-keycloak-client works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './ngx-keycloak-client.component.html',
+  styleUrls: ['./ngx-keycloak-client.component.scss']
 })
 export class NgxKeycloakClientComponent implements OnInit {
 

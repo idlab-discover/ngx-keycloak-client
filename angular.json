@@ -8,6 +8,13 @@
       "root": "projects/ngx-keycloak-client",
       "sourceRoot": "projects/ngx-keycloak-client/src",
       "prefix": "lib",
+      "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": false,
+          "inlineStyle": false,
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
