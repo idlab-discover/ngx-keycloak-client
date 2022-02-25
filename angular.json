@@ -3,5 +3,49 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-keycloak-client": {
+      "projectType": "library",
+      "root": "projects/ngx-keycloak-client",
+      "sourceRoot": "projects/ngx-keycloak-client/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-keycloak-client/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-keycloak-client/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-keycloak-client/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-keycloak-client/src/test.ts",
+            "tsConfig": "projects/ngx-keycloak-client/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-keycloak-client/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-keycloak-client/**/*.ts",
+              "projects/ngx-keycloak-client/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-keycloak-client",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
