@@ -2219,7 +2219,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
-base64-js@^1.2.0, base64-js@^1.3.1:
+base64-js@^1.2.0, base64-js@^1.3.1, base64-js@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
@@ -2285,6 +2285,11 @@ boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.1.3.tgz#ba081b0c130f810fa70900acbc1c6d3c28fa8f34"
+  integrity sha512-fcQztozJ8jToQWXxVuEyXWW+dSo8AiXWKwiSSrKWsRB/Qt+Ewwza+JWoLKiTuQLaEPhdNAJ7+Dosc9DOIqNy7Q==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -4438,6 +4443,11 @@ jest-worker@^27.4.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
+js-sha256@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/js-sha256/-/js-sha256-0.9.0.tgz#0b89ac166583e91ef9123644bd3c5334ce9d0966"
+  integrity sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA==
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4593,6 +4603,21 @@ karma@~6.3.0:
     tmp "^0.2.1"
     ua-parser-js "^0.7.30"
     yargs "^16.1.1"
+
+keycloak-angular@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/keycloak-angular/-/keycloak-angular-9.1.0.tgz#d51f3a36101bc1f309c082ab71434fb352951607"
+  integrity sha512-ATxVOfxMaBHMOIdGIXDXqQwVhKl0CqCBwg7BabwWToA41jJdV/pBR+QeF3XkBEuvowXfr3bAW2aOfNSXLUJUeg==
+  dependencies:
+    tslib "^2.0.0"
+
+keycloak-js@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-17.0.0.tgz#d6f0b22cd6606685a59c9a3c5d41cdccaada45fa"
+  integrity sha512-NEuEur5zg9uAcY9UAz7pgBjJlJcBW2VPMss6pCIfJf8JgIMnEPHwvGQIKesCIq2N5Ut+vf7NU+ICT5Xk/qwesQ==
+  dependencies:
+    base64-js "^1.5.1"
+    js-sha256 "^0.9.0"
 
 kind-of@^6.0.2:
   version "6.0.3"
@@ -5050,6 +5075,13 @@ ng-packagr@^13.0.0:
     stylus "^0.56.0"
   optionalDependencies:
     esbuild "^0.14.0"
+
+ngx-bootstrap@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-8.0.0.tgz#a1d222e626a1f5e13acdaafd754bb18874a1d561"
+  integrity sha512-UjJ/57Pr7ctdI2L113QX1IqJPYtOMrp5Qq/RLvUT1TOwPQWPi9LXTQ/7BtipkptQjer7Fk9yueITH3Y8vD+Dmg==
+  dependencies:
+    tslib "^2.0.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"
